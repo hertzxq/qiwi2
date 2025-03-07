@@ -22,3 +22,4 @@ C:\Users\Bogdanov.md\source\repos\zaDengiDa\obj\Debug\net8.0-windows\HostPage.g.
 C:\Users\Bogdanov.md\source\repos\zaDengiDa\obj\Debug\net8.0-windows\LoginPage.g.cs
 C:\Users\Bogdanov.md\source\repos\zaDengiDa\obj\Debug\net8.0-windows\HostPage.baml
 C:\Users\Bogdanov.md\source\repos\zaDengiDa\obj\Debug\net8.0-windows\LoginPage.baml
+C:\Users\Bogdanov.md\source\repos\zaDengiDa\obj\Debug\net8.0-windows\zaDengiDa.sourcelink.json

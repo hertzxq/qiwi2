@@ -28,5 +28,10 @@ namespace zaDengiDa
         {
             NavigationService.Navigate(new HostPage());
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

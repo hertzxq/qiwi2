@@ -6,32 +6,39 @@
       xmlns:local="clr-namespace:zaDengiDa"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="LoginPage"
-      Background="Black">
-
+      Title="LoginPage">
+    
+    <Page.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#00127f" Offset="0.5"/>
+            <GradientStop Color="#2e007f" Offset="0.6"/>
+            <GradientStop Color="#00517f" Offset="0.3"/>
+        </LinearGradientBrush>
+    </Page.Background>
+    
     <Grid>
         <Label 
             Content="Введите имя"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Margin="0,0,0,190"
+            Margin="0,0,0,220"
             FontSize="15"
             Foreground="White"/>
         <TextBox
             Width="200"
-            Height="30"
+            Height="25"
             VerticalAlignment="Top"
-            Margin="0,150,0,0"/>
+            Margin="0,150,0,0" TextChanged="TextBox_TextChanged"/>
         <Label 
             Content="Введите пароль"
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
-            Margin="0,0,0,185"
+            Margin="0,0,0,200"
             FontSize="15"
             Foreground="White"/>
         <TextBox
             Width="200"
-            Height="30"
+            Height="25"
             VerticalAlignment="Bottom"
             Margin="0,0,0,150"/>
         <Button 
@@ -41,7 +48,28 @@
             VerticalAlignment="Bottom"
             Margin="0,0,0,50"
             Click="New_Page"
-            Background="#858585"
-            Foreground="White"/>
+            Background="#01d11c"
+            Foreground="White">
+            <Button.Template>
+            <ControlTemplate TargetType="Button">
+                <Grid>
+                    <!-- Фон кнопки -->
+                    <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center" />
+                    </Border>
+                </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                        <Setter TargetName="border" Property="Background" Value="Green" />
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Page>
